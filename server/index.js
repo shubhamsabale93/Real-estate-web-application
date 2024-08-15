@@ -1,13 +1,13 @@
 import express from 'express'
 import cors from 'cors'
-import dotenv from 'dotenv'
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config();
 
 
 import User from './models/User.js'
 import Property from './models/Property.js'
-import property from './models/Property.js'
-dotenv.config();
+
 
 
 
