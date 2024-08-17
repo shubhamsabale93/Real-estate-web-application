@@ -133,7 +133,7 @@ app.get("/getProperty",async(req,res)=>{
     
         res.json({
             sucess:true,
-            Data:allProperty,
+            data:allProperty,
             message:"Data Fetched Sucessfully"
         })
     
@@ -141,14 +141,14 @@ app.get("/getProperty",async(req,res)=>{
 })
 
 
-app.get("/getProperty/:title",async (req,res)=>{
-    const {title}=req.params
+app.get("/getProperty/:id",async (req,res)=>{
+    const {id}=req.params
 
-    const property=await Property.findOne({title:title})
+    const property=await Property.findOne({_id:id})
     res.json({
         success:property ? true:false,
         data:property|| null,
-        message:property ? "Plant Fetched Sucessfully":"Cannot Be Found"
+        message:property ? "Property Fetched Sucessfully":"Cannot Be Found"
     })
 })
 
@@ -170,7 +170,7 @@ app.put("/updateProperty/:id",async(req,res)=>{
     const updatedProperty=await Property.findById(id)
     res.json({
         Success:true,
-        message:"Plant Updated Successfully",
+        message:"Property Updated Successfully",
         data:updatedProperty
        
     })
@@ -185,7 +185,7 @@ app.delete("/deleteProperty/:id",async(req,res)=>{
 
     const {id}=req.params
 
-    await property.deleteOne(
+    await Property.deleteOne(
     {
         _id:id
 
@@ -201,7 +201,7 @@ app.delete("/deleteProperty/:id",async(req,res)=>{
 
 
 
-const PORT=process.env.PORT || 5000;
+const PORT=process.env.PORT || 11000;
 app.listen(PORT,()=>{
     console.log(`Server is running on ${PORT}`)
 })

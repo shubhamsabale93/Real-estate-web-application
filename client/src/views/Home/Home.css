@@ -1,0 +1,47 @@
+.body{
+  background: linear-gradient(to top, #66ffff 0%, #ff99cc 100%);
+}
+.Home {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly; /* Evenly spaces the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  gap: 20px; /* Optional: Adds a gap between rows if cards wrap */
+  width: 100%;
+}
+
+.card .PropertyCard {
+  flex: 1 1 150px; /* Allows cards to grow and shrink, with a minimum width of 200px */
+  max-width: 200px; /* Optional: Limits the maximum width of each card */
+}
+
+
+.App-heading{
+  text-align: center;
+  color: tomato;
+  font-size: 20px;
+}
+.h2-head{
+  text-align: center;
+ font-weight: bold;
+ font-size: 25px;
+text-transform: capitalize;
+}
+.home-logout{
+  padding: 5px 15px;
+  margin: 10px 5px;
+  background-color:  #3399FF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  
+}

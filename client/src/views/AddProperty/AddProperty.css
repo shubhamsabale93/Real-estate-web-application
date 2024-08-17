@@ -1,0 +1,22 @@
+.btn-input{
+    width: 400px;
+    margin: 5px 30px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 5px ;
+   
+}
+.btn-addplant{
+   margin: 10px 30px;
+   padding: 5px 20px;
+   background-color:blue;
+   color:white;
+   text-decoration: none;
+   border: none;
+
+}
+.form-head{
+    display: flex;
+    justify-content: center;
+  
+}

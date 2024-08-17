@@ -1,0 +1,52 @@
+.container{
+    border: 1px solid #ddd;
+     border-radius: 18px;
+     padding: 10px;
+     width: 400px;
+     
+   
+     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+     background-color: #fff;
+     margin-bottom: 3rem;
+    
+   
+  
+}
+.IMG{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+   
+    
+   
+}
+.head{
+   
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 20px;
+}
+.elements{
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn{
+    padding: 5px 15px;
+    margin: 10px 5px;
+    background-color:  #3399FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.action-button{
+    padding: 5px 15px;
+    margin: 10px 5px;
+    background-color:  #3399FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+}
